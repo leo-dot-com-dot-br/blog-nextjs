@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const isLoginPage = request.nextUrl.pathname.startsWith('/admin/login');
   const isAdminPage = request.nextUrl.pathname.startsWith('/admin');
   const isGetRequest = request.method === 'GET';

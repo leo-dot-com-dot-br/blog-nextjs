@@ -41,12 +41,6 @@ const PostBaseSchema = z.object({
     .transform(val => val === 'on' || val === 'true' || val === true),
 });
 
-export const PostCreateSchema = PostBaseSchema;
-
-export const PostUpdateSchema = PostBaseSchema.extend({
-  // id: z.string().uuid('ID inválido'),
-});
-
 export const CreatePostForApiSchema = PostBaseSchema.omit({
   author: true,
   published: true,

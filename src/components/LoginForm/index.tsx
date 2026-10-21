@@ -9,7 +9,7 @@ import Link from 'next/link';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { useActionState, useEffect } from 'react';
 import { toast } from 'react-toastify';
-import { HoneypotInput } from '../Honeypotinput';
+import { HoneypotInput } from '../HoneypotInput';
 
 export function LoginForm() {
   const initialState = {

@@ -9,7 +9,7 @@ import { useActionState, useEffect } from 'react';
 import { createUserAction } from '@/actions/user/create-user-action';
 import { PublicUserSchema } from '@/lib/user/schemas';
 import { toast } from 'react-toastify';
-import { HoneypotInput } from '../Honeypotinput';
+import { HoneypotInput } from '../HoneypotInput';
 
 export function CreateUserForm() {
   const [state, action, isPending] = useActionState(createUserAction, {

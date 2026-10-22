@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 export async function proxy(request: NextRequest) {
+  if (request.method !== 'GET') return NextResponse.next();
+
   const jwtSession = request.cookies.get(
     process.env.LOGIN_COOKIE_NAME || 'loginSession',
   )?.value;

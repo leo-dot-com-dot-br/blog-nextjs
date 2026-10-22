@@ -2,7 +2,7 @@
 
 Full-stack blog with a public reading area and an admin panel. Built with Next.js (App Router, Server Actions) and backed by its own REST API written in NestJS.
 
-> Backend repository: [api-nestjs-for-blog](https://github.com/leo-dot-com-dot-br/blog-nestjs-api)
+> Backend repository: [blog-nestjs-api](https://github.com/leo-dot-com-dot-br/blog-nestjs-api)
 
 ## Features
 

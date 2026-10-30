@@ -21,15 +21,8 @@ WORKDIR /app
 COPY --from=builder /app/.next/static ./.next/static
 COPY --from=builder /app/.next/standalone ./
 
-COPY package*.json ./
-
-RUN npm ci
-
-COPY . .
-
-ARG NEXT_PUBLIC_IMAGE_UPLOAD_MAX_SIZE
-
-ENV NEXT_PUBLIC_IMAGE_UPLOAD_MAX_SIZE=${NEXT_PUBLIC_IMAGE_UPLOAD_MAX_SIZE}
+ENV HOSTNAME=0.0.0.0
+ENV NODE_ENV=production
 
 EXPOSE 3000
 

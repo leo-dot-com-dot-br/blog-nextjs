@@ -13,8 +13,8 @@ const nextConfig: NextConfig = {
         search: '',
       },
       {
-        protocol: 'http',
-        hostname: 'https://dominio',
+        protocol: 'https',
+        hostname: 'https://thenextblog.duckdns.org',
         port: '',
         pathname: '/**',
         search: '',

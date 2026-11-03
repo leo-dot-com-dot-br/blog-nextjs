@@ -14,7 +14,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'https://thenextblog.duckdns.org',
+        hostname: 'thenextblog.duckdns.org',
         port: '',
         pathname: '/**',
         search: '',

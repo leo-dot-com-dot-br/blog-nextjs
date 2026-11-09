@@ -136,3 +136,8 @@ The first version read posts directly from a local SQLite database through
 Drizzle ORM. The project was then migrated to a dedicated NestJS API and the old
 data layer was removed. The tag `pre-organization` marks the last commit that
 still contains it.
+
+## Deployment
+
+Production setup (Docker Compose, NGINX, HTTPS with Certbot, AWS EC2) lives in
+[blog-deploy](https://github.com/leo-dot-com-dot-br/blog-deploy).
